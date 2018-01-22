@@ -12,7 +12,7 @@ labels=[0,0,0,0,0,1,1,1,1,1,1]
 #calling DecisionTreeClassifier function
 
 clf=tree.DecisionTreeClassifier()
-output=clf.fit[features,labels]
+output=clf.fit(features,labels)
 
 #testing data
 print (output.predict[[130,0]])
