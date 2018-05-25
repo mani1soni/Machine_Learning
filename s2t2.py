@@ -1,12 +1,15 @@
+!#/usr/bin/env_python3
 import speech_recognition as sr
 import os,time
+
+# microphone detection
 class CustomSource(sr.Microphone):
     def init(self, device_index = None, sample_rate = 16000, chunk_size = 1024):
         print("about to initialize microphone")
         result = super(self.__class__, self).init()
         print("done initializing microphone")
         return result
-
+#calling speech recognizer's function
 class CustomRecognizer(sr.Recognizer):
     def listen(self, source, timeout = 10):
        	print("speak a valid command \n !!Caution expert pronunciation Required ")
