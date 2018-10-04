@@ -1,5 +1,4 @@
-#!/usr/bin/python3.5
-
+#!/usr/bin/python3
 from sklearn import tree
 
 #apple_smooth = 0 and orange_bumpy = 1
